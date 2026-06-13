@@ -1,0 +1,377 @@
+.bod{
+     background:linear-gradient( -70deg, rgb(8, 8, 8),rgb(110, 143, 11));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+nav .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    a:hover{
+        text-decoration: underline 4px;
+        transform: scale(1.1);
+        transition:0.5s ease-in-out;
+        color: orange;
+        font-size: 16px;
+        
+    }
+    li{list-style-type: none;padding-top: 30px;}
+    a{
+        text-decoration: none;
+        padding-right: 16px;
+        color:whitesmoke;
+        font-size: 19px;
+        font-weight: bolder;
+        
+    }
+}
+.hero-content{
+     display: flex;
+    justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 40px;
+     margin-top: 90px;
+     .tagline{
+        color: rgb(160, 160, 3);
+        font-size: 20px;
+        
+     }
+     .description{
+        color: rgb(160, 163, 3);
+        font-size: 17px;
+     }
+     h1{
+        font-size: 75px;
+        color: rgb(160, 160, 3);
+        font-weight: bolder;
+
+     }
+     h3{
+        color: rgb(243, 241, 241);
+     }
+     .gradient-btn{
+        margin-top: 40px;
+        color: aliceblue;
+        border-radius: 6px;
+        border: none;
+        font-size: 19px;
+        font-weight: bold;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+        padding-bottom: 7px;
+        padding-top: 7px;
+        background:linear-gradient(to top left, rgb(8, 8, 8),rgb(110, 143, 11));
+     }
+     .gradient-btn:hover{
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out;
+        border:0.8px rgb(160, 160, 3) solid ;
+        background:linear-gradient(to top right, rgb(8, 8, 8),rgb(110, 143, 11));
+     }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .menu {
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+
+    nav .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 20px;
+        min-height: 100vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h3 {
+        font-size: 1rem;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .gradient-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+
+.bd{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background:linear-gradient(to top right, rgb(8, 8, 8),rgb(110, 143, 11));
+     }
+    
+
+.fheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     background: linear-gradient(to top left, rgb(5, 5, 5),rgb(110, 143, 11));
+    align-items: center;
+    h1{
+     padding-left: 40px;
+     color: rgb(160, 160, 3) ;
+    }
+    .btn{
+        border-radius: 16px;
+        margin-right: 20px;
+        font-weight: bold;
+        font-family: serif;
+        align-items: center;
+    }
+    .btn:hover{
+        color: orange;
+        text-decoration: underline 2px;
+        transform: scale(1.1);
+        transition:0.5s ease-in-out;
+    }
+
+}
+.fmenu{
+    display: flex;flex-direction: row;
+    list-style-type: none;
+    a{
+        padding-right: 14px;
+        color: whitesmoke;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bolder;
+        margin-top: 12px;
+    }
+    a:hover{
+        text-decoration: underline 4px;
+        transform: scale(1.1);
+        transition:0.5s ease-in-out;
+        color: orange;
+        font-size: 14px;
+    }
+}
+.fhero{
+    background-color: #ffffff5e;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    h1{
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        padding-left: 20px;
+        padding-right: 20px;
+        span{
+            color:rgb(56, 56, 4);
+            font-size: 65px;
+        }
+    }
+    .para{
+        border: 3px rgb(56, 56, 4) solid;
+        border-radius: 6px;
+        align-items: center;
+        margin-right: 60px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        
+        h4{
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times,
+             'Times New Roman', serif;
+             font-weight: bolder;
+             text-decoration: underline;
+             
+        }
+        
+        li{color: rgb(29, 28, 29); font-weight: bold; font-size: 17px;}
+        
+    }
+}
+.hero2{
+    background-color: #ffffff5e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left{
+        margin-left: 30px;
+        
+        h3{
+            font-size: 40px;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    }
+    .right{
+        margin-top: 70px;
+        img{
+            height: 46vh;
+            border: 2px rgb(56, 56, 4) solid;
+            border-radius: 12px;
+            margin-right: 50px;
+        }
+    }
+}
+.hero3{
+    background-color: #ffffff5e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    h3{
+        font-size: 60px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: black;
+
+    }
+    li{
+        color: black;
+    }
+    img{
+        border: 2px rgb(56, 56, 4) solid ;
+        margin-left:40px ;
+        margin-right: 6rem;
+        border-radius: 13px;
+
+    }
+    .P1{
+        color: black;
+        font-size: x-large;
+        span{color: rgb(75, 75, 3);}
+    }
+}
+.line{
+    background-color: rgb(110, 143, 11);
+    color: rgb(110, 143, 11);
+    padding-top: 7px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* Tablets */
+@media (max-width: 768px) {
+
+    .fheader {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .fmenu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .fhero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero2,
+    .hero3 {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero2 img,
+    .hero3 img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+
+    .fmenu {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 12px;
+    }
+
+    .fhero{
+        flex-direction: column;
+        
+    }
+    .fhero  h1 {
+        font-size: 2rem;
+        span {
+        font-size: 2rem;
+    }
+    }
+
+    
+
+    .para {
+        width: 90%;
+        margin: auto;
+    }
+
+    .hero2,
+    .hero3 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .hero2 img,
+    .hero3 img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .hero2 ul,
+    .hero3 ul {
+        text-align: left;
+    }
+
+    .P1 {
+        font-size: 0.95rem;
+    }
+}
