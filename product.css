@@ -120,7 +120,7 @@
     .product-card{margin-bottom: 20px;}
 
     .fheader{
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 .badge{
@@ -132,6 +132,45 @@
     font-size: 12px;
     border-radius: 5px;
     font-weight: bold;text-align: center;
+}
+
+.final{
+    padding-top: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color:black ;
+    h3{
+      font-size: 50px;
+      color:rgb(168, 118, 10) ;
+    }
+    p{
+        font-size: 20px;
+        color: #f7f6f6;
+    }
+    span{font-size: 25px;color:rgb(168, 118, 10);font-weight: bolder;}
+    .line{margin-top: 30px;
+        background-color:rgb(168, 118, 10);
+        padding-right: 550px;
+        padding-left: 550px;
+        padding-top: 3px;
+    }
+}
+footer{
+
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    .left{
+        padding-left: 100px;
+        padding-top: 46px;
+        h3{color:rgb(168, 118, 10) ;}
+        p{color: #f7f6f6;}
+    }
+    .right{padding-right: 100px;}
+    #pp{color: #f7f6f6;font-size: 10px;}
+    h4{color:rgb(168, 118, 10) ;}
 }
 
 

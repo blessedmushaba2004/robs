@@ -124,9 +124,8 @@ nav .menu{
         font-size: 0.9rem;
     }
 
-    .gradient-btn {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+  .gradient-btn{
+       margin-top: 60px;
     }
 }
 
