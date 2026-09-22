@@ -5,7 +5,7 @@ document.getElementById("send").addEventListener("submit", function(e) {
   const email = document.getElementById("email").value.trim();
   const message = document.getElementById("message").value.trim();
 
-  const phoneNumber = "263789052888"; 
+  const phoneNumber = "263779678382"; 
 
   const text = 
 `*New Customer Inquiry*
@@ -16,7 +16,7 @@ document.getElementById("send").addEventListener("submit", function(e) {
 
   const encodedText = encodeURIComponent(text);
 
-  const url = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+  const url = `https://wa.me/${phoneNumber}?text=${thnks}`;
 
   window.open(url, "_blank");
 
