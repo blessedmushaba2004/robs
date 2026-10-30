@@ -140,6 +140,7 @@
         width: 22px;
         border-radius: 10px;
         background-color: orange;
+        
     }
     .product-grid{
         display: flex;
