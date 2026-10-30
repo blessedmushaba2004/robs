@@ -112,15 +112,57 @@
 .product-card button:hover{
     opacity: 0.85;
 }
+.slider-dots{
+    display: none;
+}
 
-@media(max-width: 480px){
-    .product-card img{
-        height: 30vh;
+@media screen and (max-width: 600px){
+    .slider-dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin: 20px 0;
+
     }
-    .product-card{margin-bottom: 20px;}
+    .slider-dots .dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #ccc;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        transition: all 0.1s ease;
+    }
+    .slider-dots .dot.active{
+        background: #e6a23c;
+        width: 22px;
+        border-radius: 10px;
+        background-color: orange;
+    }
+    .product-grid{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 15px;
+        padding: 10px;
+        scroll-snap-type: x manda;
+        touch-action: pan-x pan-y;
+        -webkit-overflow-scrolling: touch;
+    }
+    .product-card{
+       flex: 0 0 85%;
+       max-width: 85%;
+       box-sizing: border-box;
+       scroll-snap-align: start;
 
-    .fheader{
-        flex-direction: row;
+    }
+    .product-card img{
+        width: 100%;
+        height: 180PX;
+        object-fit:cover ;
     }
 }
 .badge{

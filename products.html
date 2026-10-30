@@ -63,6 +63,10 @@
 
 </div>
 
+
+<div class="slider-dots">
+    
+</div>
     </section>
 
 <section class="products" id="products">
@@ -99,6 +103,9 @@
 
         
     </div>
+    <div class="slider-dots">
+    
+</div>
 </section>
 
 <section class="products">
@@ -132,7 +139,11 @@
         <a href="./contacts.html"><button>Order Now</button></a>
         </div>
         
+        <div class="slider-dots">
+    
+</div>
 </section>
+
 
 <section class="final">
     <h3>
@@ -165,5 +176,81 @@
     </div>
  </footer>
 
+
+
+
+
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const slider = document.querySelector(".product-grid");
+    const cards = document.querySelectorAll(".product-card");
+    const dotsContainer = document.querySelector(".slider-dots");
+
+    if (!slider || !cards.length || !dotsContainer) return;
+
+    // Create one dot for each product
+    cards.forEach((card, index) => {
+
+        const dot = document.createElement("button");
+
+        dot.classList.add("dot");
+        dot.setAttribute("aria-label", `View product ${index + 1}`);
+
+        if (index === 0) {
+            dot.classList.add("active");
+        }
+
+        // Click a dot to scroll to its product
+        dot.addEventListener("click", () => {
+            card.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "start"
+            });
+        });
+
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll(".dot");
+
+    // Detect which product is currently visible
+    function updateActiveDot() {
+
+        const sliderRect = slider.getBoundingClientRect();
+        let closestIndex = 0;
+        let smallestDistance = Infinity;
+
+        cards.forEach((card, index) => {
+
+            const cardRect = card.getBoundingClientRect();
+
+            const distance = Math.abs(
+                cardRect.left - sliderRect.left
+            );
+
+            if (distance < smallestDistance) {
+                smallestDistance = distance;
+                closestIndex = index;
+            }
+        });
+
+        dots.forEach((dot, index) => {
+            dot.classList.toggle(
+                "active",
+                index === closestIndex
+            );
+        });
+    }
+
+    // Update dots when the user swipes
+    slider.addEventListener("scroll", updateActiveDot);
+
+    // Set the correct dot when the page loads
+    updateActiveDot();
+
+});
+</script>
 </body>
 </html>
